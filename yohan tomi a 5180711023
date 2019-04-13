@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace ::std;
+
+double INPUT(string NIRVANA){
+    double NILAI;
+    cout<<"     MASUKKAN NILAI "<<NIRVANA<<" :"; cin>>NILAI;
+    return NILAI;
+}
+
+main(){
+   struct kurt{ float uts,uas,tgs,abs,ipk;};
+kurt cobain;
+
+cobain.uts=INPUT("UTS");
+
+cobain.uas=INPUT("UAS");
+
+cobain.tgs=INPUT("TUGAS");
+
+cobain.abs=INPUT("ABSEN");
+
+cobain.ipk=cobain.uts*0.20+cobain.uas*0.30+cobain.tgs*0.35+cobain.abs*0.15;
+cout<<"IPK : ";cout<<cobain.ipk;cout<<endl;
+cout<<"IPK : ";cout<<cobain.ipk;cout<<endl;
+
+if(cobain.ipk>100){cout<<"INPUTKAN ULANG";}
+else if (cobain.ipk>81){cout<<"A>>>PERFECTO";}
+else if (cobain.ipk>60){cout<<"B>>>NICE TRY";}
+else if (cobain.ipk>40){cout<<"C>>>NOT BAD";}
+else if (cobain.ipk>20){cout<<"D>>>NEWBIE";}
+else {cout<<"E>>>NOOB";}
+}
